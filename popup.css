@@ -1,0 +1,91 @@
+body {
+    width: 220px;
+    height: auto;
+    background-color: #1d1d1d;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding: 5px;
+    margin: 0;
+    display: block;
+}
+
+.settings-section {
+    background-color: #292929;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+h2 {
+    color: #d35400;
+    text-align: center;
+}
+
+h3 {
+    color: #61dafb;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+
+label {
+    margin-right: auto;
+}
+
+input[type="number"] {
+    background-color: #333;
+    border: 1px solid #555;
+    color: #ddd;
+    padding: 2px 5px;
+    border-radius: 4px;
+    text-align: right;
+}
+
+
+/* Target specific inputs by ID for width control */
+#padding,
+#maxWidth {
+    width: 40%;
+    /* Adjust the width as needed */
+    background-color: #333;
+    border: 1px solid #555;
+    color: #ddd;
+    padding: 2px 5px;
+    border-radius: 4px;
+    text-align: right;
+}
+
+input[type="checkbox"] {
+    accent-color: #2196F3;
+}
+
+.save-button-container {
+    text-align: center;
+    /* Centers the button within the container */
+}
+
+#saveSettings {
+    background-color: #2196F3;
+    /* Blue button */
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    /* Adjusted size */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    /* Adjusted font size for smaller button */
+    display: inline-block;
+    /* Allows the button to be centered by text-align */
+}
+
+
+#saveSettings:hover {
+    background-color: #0b7dda;
+}

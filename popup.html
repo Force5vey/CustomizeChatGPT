@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+
+<body>
+    <h2 id="extensionTitle">Customize ChatGPT</h2>
+    <div class="settings-section">
+        <h3>Widen Output</h3>
+        <div class="option">
+            <label>Enable</label>
+            <div class="switch">
+                <input type="checkbox" id="toggleExtension">
+                <span class="slider round"></span>
+            </div>
+        </div>
+        <div class="option">
+            <label for="padding">Padding:</label><input type="number" id="padding" min="0" value="20">
+        </div>
+        <div class="option">
+            <label for="maxWidth">Max Width:</label><input type="number" id="maxWidth" min="0" value="3440">
+        </div>
+    </div>
+    <div class="settings-section">
+        <h3>Modify Enter Key</h3>
+        <div class="option">
+            <label>Enable</label>
+            <div class="switch">
+                <input type="checkbox" id="toggleEnterKeyModifier">
+                <span class="slider round"></span>
+            </div>
+        </div>
+    </div>
+    <div class="save-button-container">
+        <button id="saveSettings">Save Settings</button>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

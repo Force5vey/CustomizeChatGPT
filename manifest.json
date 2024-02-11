@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "Widen Chat GPT",
+    "version": "1.2",
+    "description": "Adjusts the ChatGPT chat window display area dynamically based on window size. Also enables the swapping of the enter and shift + enter functions in the user input text box.",
+    "permissions": [
+        "activeTab",
+        "storage",
+        "tabs"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://chat.openai.com/*"
+            ],
+            "js": [
+                "adjustChatDisplayArea.js",
+                "modifyEnterKeyBehavior.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        }
+    }
+}
